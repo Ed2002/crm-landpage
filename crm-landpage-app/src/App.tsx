@@ -1,8 +1,10 @@
+import { Menu } from "./components/Menu"
+
 function App() {
 
   return (
     <>
-      <h1>CRM</h1>
+      <Menu/>
     </>
   )
 }
