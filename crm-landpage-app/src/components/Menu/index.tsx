@@ -1,14 +1,20 @@
 import AppBar from "@mui/material/AppBar"
-import Toolbar from "@mui/material/Toolbar"
+import Toolbar from "@mui/material/Toolbar";
 
 export const Menu = () => {
     return (
-        <AppBar position="static" style={{
-            backgroundColor: 'var(--green)'
-        }}>
+        <>
+            <AppBar
+            style={{
+                backgroundColor: 'var(--green)',
+                color: '#fff',
+            }}
+            >
             <Toolbar>
-            <h2>CRM</h2>
+                <h3>CRM</h3>
             </Toolbar>
-        </AppBar>
+            </AppBar>
+            <Toolbar />
+        </>
     );
 }

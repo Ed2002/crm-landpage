@@ -50,3 +50,27 @@ p
   font-size: 16px;
   font-weight: 300;
 }
+
+.text-white
+{
+  color: var(--white);
+}
+
+
+.container
+{
+  padding: 0 2%;
+}
+
+.backText
+{
+  background-color: var(--green);
+  border-radius: 2px;
+  padding: 0 8px;
+}
+
+.BtnPrimary
+{
+  background-color: var(--green);
+  color: var(--white);
+}
