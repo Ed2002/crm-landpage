@@ -1,26 +1,15 @@
-import { Button as ButtonMUI } from "@mui/material";
+import { Button as ButtonMUI, ButtonProps} from "@mui/material";
 
-interface IButton {
-    Variant: 'contained' | 'outlined',
+interface IButtonProps {
     Text: string
 }
 
+type BtnPros = ButtonProps & IButtonProps;
+
 export const Button = ({
-    Variant, Text
-}:IButton) => {
-    switch(Variant)
-    {
-        case 'contained':
-            return (
-                <ButtonMUI color="success" variant={Variant}>
-                    {Text}
-                </ButtonMUI>
-            );
-        case 'outlined':
-            return (
-                <ButtonMUI color="success" variant={Variant} >
-                    {Text}
-                </ButtonMUI>
-            );
-    }
-}
+    Text, ...rest
+}:BtnPros) => (
+    <ButtonMUI color="success" {...rest}>
+        {Text}
+    </ButtonMUI>
+)
